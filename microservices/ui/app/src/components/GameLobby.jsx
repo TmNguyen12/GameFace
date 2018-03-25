@@ -35,9 +35,11 @@ class GameLobby extends Component {
           <div className="lobby-top">
             <div className="lobby-top-header">
               <h2 className="lobby-top-round">Round 1</h2>
-              <h3 className="lobby-top-scenario">Scenario</h3>
+              <h2 className="lobby-top-scenario">Scenario</h2>
             </div>
-            <div className="lobby-top-scenario-paragraph">insert random scenario here</div>
+            <div className="lobby-top-scenario-paragraph-div">
+              <h3 className="lobby-top-scenario-paragraph">insert random scenario here</h3>
+            </div>
           </div>
 
           <div className="lobby-playerCams">
@@ -84,9 +86,7 @@ class GameLobby extends Component {
 
         <div className="lobby-right">
           <div className="lobby-currentUser">
-            <div className="lobby-currentUser-image">
-
-            </div>
+            <div className="lobby-currentUser-image"></div>
             <h2 className="lobby-currentUser-name">username</h2>
           </div>
 
