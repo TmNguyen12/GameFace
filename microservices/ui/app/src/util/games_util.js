@@ -79,7 +79,7 @@ var players = {
   5: "player5"
 };
 
-export const updateGame = (gameID, playerCount, playerID) => {
+export const addPlayerToGame = (gameID, playerCount, playerID) => {
   //playerCount is the new player count after adding this player
   var playerDBName = players[playerCount];
 
@@ -94,6 +94,36 @@ export const updateGame = (gameID, playerCount, playerID) => {
       },
       $set: {
         [playerDBName]: `${playerID}`
+      }
+    }
+  };
+
+  requestOptions.body = JSON.stringify(body);
+
+  fetch(url, requestOptions)
+    .then(function(response) {
+      return response.json();
+    })
+    .then(function(result) {
+      console.log(result);
+    })
+    .catch(function(error) {
+      console.log("Request Failed:" + error);
+    });
+};
+
+export const endGame = gameID => {
+  var body = {
+    type: "update",
+    args: {
+      table: "games",
+      where: {
+        id: {
+          $eq: `${gameID}`
+        }
+      },
+      $set: {
+        completed: true
       }
     }
   };

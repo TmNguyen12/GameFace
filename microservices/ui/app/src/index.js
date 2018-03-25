@@ -4,10 +4,16 @@ import "./index.css";
 import App from "./App";
 //import registerServiceWorker from './registerServiceWorker';
 import { fetchScenario } from "./util/scenarios_util";
-import { createGame, fetchGame, updateGame } from "./util/games_util";
+import {
+  createGame,
+  fetchGame,
+  addPlayerToGame,
+  endGame
+} from "./util/games_util";
 
-window.updateGame = updateGame;
+window.addPlayerToGame = addPlayerToGame;
 window.createGame = createGame;
+window.endGame = endGame;
 window.fetchGame = fetchGame;
 window.fetchScenario = fetchScenario;
 ReactDOM.render(<App />, document.getElementById("root"));
