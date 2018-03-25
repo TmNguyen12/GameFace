@@ -66,7 +66,7 @@ class Video extends Component {
           console.log(cam1)
        session.publish(publisher);
        session.on("streamCreated", function(e) {
-         session.subscribe(e.stream, cam1, { insertMode: "replace" });
+         session.subscribe(e.stream, cam1, { insertMode: "replace", height: "95%", width: "95%" });
          setInterval(function() {
            var imgData = publisher.getImgData();
            img = document.createElement("img");
