@@ -1,0 +1,60 @@
+Entities:{
+  Users: {
+    UserID: {
+      username: ,
+      displayName: ,
+      userGamesByID: [],
+      userGamesByList: {
+        gameID: {
+          round1: {
+            coreEmotion: ,
+            scenario: ,
+            score: 
+          },
+          round2: {
+            coreEmotion: ,
+            scenario: ,
+            score: 
+          },
+          round3: {
+            coreEmotion: ,
+            scenario: ,
+            score: 
+          },
+          round4: {
+            coreEmotion: ,
+            scenario: ,
+            score: 
+          },
+          round5: {
+            coreEmotion: ,
+            scenario: ,
+            score: 
+          }
+        }
+      }
+    }
+  }
+  Games: {
+    ID: {
+      complete: , 
+      gameMaster: ,
+      player2: ,
+      player3: ,
+      player4: ,
+      player5: , 
+    } 
+  }
+  Scenarios: {
+    ID: {
+      Text: , 
+      Emotion: 
+    }
+}
+Session: {
+  sessionToken: , 
+  currentUser: 
+}
+
+https://github.com/TmNguyen12/GameFace.git
+
