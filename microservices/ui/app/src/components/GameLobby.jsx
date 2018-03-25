@@ -24,7 +24,9 @@ class GameLobby extends Component {
   // }
 
   copyToClipboard() {
-    let copyText = "some link we got from the current page";
+    // let copyText = "some link we got from the current page";
+    var copyText = document.querySelector("#linkAddress");
+    copyText.select();
     document.execCommand("Copy");
     // alert("Copied the text: ");
   }
@@ -36,7 +38,6 @@ class GameLobby extends Component {
           <div className="lobby-top">
             <div className="lobby-top-header">
               <h2 className="lobby-top-round">Round 1</h2>
-              <h2 className="lobby-top-scenario">Scenario</h2>
             </div>
             <div className="lobby-top-scenario-paragraph-div">
               <h3 className="lobby-top-scenario-paragraph">
@@ -100,13 +101,14 @@ class GameLobby extends Component {
           <div className="lobby-inviteLink">
             <h3 className="lobby-inviteLink-header">Invite Link</h3>
             <input
+              id="linkAddress"
               className="lobby-inviteLink-linkAddress"
               value="  insert link address here"
               type="text"
             />
             <button
               className="lobby-inviteLink-button"
-              onClick="copyToClipboard()"
+              onClick={this.copyToClipboard}
             >
               Copy
             </button>
@@ -121,31 +123,34 @@ class GameLobby extends Component {
 
           <div className="lobby-standings">
             <h2 className="lobby-standing-title">STANDINGS</h2>
-            <h3 className="lobby-standing-name">1st insert player name here</h3>
+            <div className="lobby-standing-place-name">
+              <h3 className="lobby-standing-place">1st</h3>
+              <h3 className="lobby-standing-name">user1</h3>
+            </div>
             <h3 className="lobby-standing-score">
-              insert 9079
+              479
             </h3>
-            <h3 className="lobby-standing-name">2nd insert player name here</h3>
+            <h3 className="lobby-standing-name">2nd insert player name</h3>
             <h3 className="lobby-standing-score">
-              insert score here
+              250
             </h3>
-            <h3 className="lobby-standing-name">3rd insert player name here</h3>
+            <h3 className="lobby-standing-name">3rd insert player name</h3>
             <h3 className="lobby-standing-score">
-              insert score here
+              250
             </h3>
-            <h3 className="lobby-standing-name">4th insert player name here</h3>
+            <h3 className="lobby-standing-name">4th insert player name</h3>
             <h3 className="lobby-standing-score">
-              insertscore here
+              250
             </h3>
-            <h3 className="lobby-standing-name">5th insert player name here</h3>
+            <h3 className="lobby-standing-name">5th insert player name</h3>
             <h3 className="lobby-standing-score">
-              insert score here
+              25
             </h3>
           </div>
 
           <div className="lobby-timer">
             <h2 className="lobby-timer-header">Timer</h2>
-            <h2 className="lobby-timer-time">countdown here</h2>
+            <h2 className="lobby-timer-time">countdown</h2>
           </div>
 
           <div className="lobby-readyButton">
