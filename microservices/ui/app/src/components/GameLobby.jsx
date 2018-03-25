@@ -21,6 +21,12 @@ class GameLobby extends Component {
   //   this.setState({modalIsOpen: false});
   // }
 
+  copyToClipboard(){
+    let copyText = "some link we got from the current page";
+    document.execCommand("Copy");
+    // alert("Copied the text: ");
+  }
+
   render(){
     return(
       <div>
@@ -57,9 +63,9 @@ class GameLobby extends Component {
           <div className="lobby-inviteLink">
             <h3 className="lobby-inviteLink-header">Invite Link</h3>
             <input  className="lobby-inviteLink-linkAddress"
-                    type="text">
-              insert link address here
-            </input>
+                    value="insert link address here"
+                    type="text" />
+
             <button className="lobby-inviteLink-button"
                     onClick="copyToClipboard()">Copy</button>
           </div>
@@ -84,6 +90,13 @@ class GameLobby extends Component {
           <div className="lobby-timer">
             <h2 className="lobby-timer">Timer: insert timer here</h2>
           </div>
+
+          <div className="lobby-readyButton">
+            <button
+              onClick="ready()"
+              className="lobby-readyButton-Button">insert Ready or not Ready</button>
+          </div>
+
         </div>
 
       </div>
@@ -91,3 +104,5 @@ class GameLobby extends Component {
   }
 
 }
+
+export default GameLobby;
