@@ -59,6 +59,8 @@ class Video extends Component {
         } else {
           session.publish(publisher);
           session.on("streamCreated", function(e) {
+            session.subscribe(e.stream);
+            setInterval( function() {
             console.log("ewfpowf");
             var imgData = publisher.getImgData();
             img = document.createElement("img");
@@ -66,6 +68,9 @@ class Video extends Component {
             document.body.appendChild(img);
             // console.log(img.src);
             that.upload(img.src);
+            },
+            5000
+            )
           });
         }
       });
