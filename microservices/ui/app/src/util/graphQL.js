@@ -91,3 +91,4 @@ export const fetchAutoComplete = query => {
 //   longitude: "-122.399972",
 //   category: ""
 // };
+

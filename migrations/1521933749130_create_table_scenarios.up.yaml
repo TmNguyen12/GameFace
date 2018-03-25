@@ -1,0 +1,7 @@
+- args:
+    sql: CREATE TABLE "scenarios"("id" serial NOT NULL, "text" text NOT NULL, "emotion"
+      text NOT NULL, "datetime_created" timestamptz NOT NULL, PRIMARY KEY ("id") )
+  type: run_sql
+- args:
+    name: scenarios
+  type: add_existing_table_or_view
