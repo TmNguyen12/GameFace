@@ -1,0 +1,12 @@
+- args:
+    permission:
+      columns:
+      - time
+      - date
+      - id
+      - text
+      - emotion
+      filter: {}
+    role: anonymous
+    table: scenarios
+  type: create_update_permission
