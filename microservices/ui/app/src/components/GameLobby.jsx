@@ -121,7 +121,7 @@ class GameLobby extends Component {
             <img  className="lobby-currentUser-image"
                   alt="user-img"
                   src="https://openclipart.org/image/2400px/svg_to_png/247319/abstract-user-flat-3.png"/>
-                <h2 className="lobby-currentUser-name">user1</h2>
+            <h2 className="lobby-currentUser-name">user1</h2>
           </div>
 
           <div className="lobby-standings">
