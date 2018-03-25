@@ -1,0 +1,132 @@
+html, body {
+  height: 100%;
+}
+#root {
+  height: 100%;
+}
+.App {
+  height: 100%;
+}
+
+
+.lobby {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.lobby-left {
+  width: 70%;
+  /*background: blue;*/
+}
+
+.lobby-right {
+  width: 30%;
+  /*background: gray;*/
+}
+
+.lobby-top {
+  height: 20%;
+}
+
+.lobby-top-header {
+  display: flex;
+  flex-direction: row;
+  height: 25%;
+}
+
+.lobby-top-scenario-paragraph {
+  border: 5px solid black;
+  border-radius: 20px;
+  height: 65%;
+  /*width: 100%;*/
+  margin: 2% .5% 5% 2.5%;
+}
+
+
+
+.lobby-playerCams {
+  display: flex;
+  flex-wrap: row;
+  height: 70%;
+  width: 100%;
+}
+
+.highlightedCam {
+  width: 50%;
+  border: 5px solid black;
+  border-radius: 2.5%;
+  margin: 2%;
+  /*padding: 10px;*/
+  box-sizing: border-box;
+}
+
+.otherCams {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.otherCams-top {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: 4% 0 2% 0;
+  box-sizing: border-box;
+}
+
+.otherCams-bottom {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: 2% 0 4% 0;
+}
+
+.lobby-playerCam {
+  /*padding: 10px;*/
+  width: 50%;
+  height: 100%;
+  border: 5px solid black;
+  border-radius: 5%;
+  box-sizing: border-box;
+}
+
+.cam2, .cam4 {
+  margin-right: 4%;
+}
+
+.lobby-inviteLink {
+  height: 10%;
+}
+
+.lobby-playerCam-ready {
+  margin-top: 10px;
+  color: orange;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+
+
+.lobby-inviteLink {
+  display: flex;
+  flex-direction: row;
+}
+.lobby-inviteLink-header {
+  margin: auto 1% auto 5%;
+}
+
+.lobby-inviteLink-linkAddress {
+  height: 25%;
+  margin: auto 0;
+}
+.lobby-inviteLink-button {
+  border: none;
+  height: 30%;
+  padding: 10px 20px;
+  background: purple;
+  color: white;
+  margin: auto 0;
+}
