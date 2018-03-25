@@ -168,14 +168,13 @@ class GameLobby extends Component {
             <h2 className="lobby-timer-time">20</h2>
           </div>
 
-    //       <div className="lobby-readyButton">
-    //         <button onClick={"ready()"} className="lobby-readyButton-Button">
-    //           Ready
-    //         </button>
-    //       </div>
-    //     </div>
-    //   </div>
-    <div></div>
+          <div className="lobby-readyButton">
+            <button onClick={"ready()"} className="lobby-readyButton-Button">
+              Ready
+            </button>
+          </div>
+        </div>
+      </div>
     );
   }
 }
