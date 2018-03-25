@@ -3,7 +3,7 @@ import request from "superagent";
 import $ from "jquery";
 // import { OTSession, OTPublisher, OTStreams, OTSubscriber, preloadScript } from "opentok-react";
 const OT = require("@opentok/client");
-const publisher = OT.initPublisher();
+
 
 const CLOUDINARY_UPLOAD_PRESET = "gdhkqlqn_preset";
 const CLOUDINARY_UPLOAD_URL =
@@ -18,7 +18,6 @@ class Video extends Component {
       connected: false,
       img: ""
     };
-    console.log(publisher);
 
     this.sessionEvents = {
       sessionConnected: () => {
@@ -49,28 +48,36 @@ class Video extends Component {
   }
 
   initializeSession() {
-    let session = OT.initSession(this.props.apiKey, this.props.sessionId);
+    var publisherOptions = { insertMode: "replace", width: "100%", height: "100%" };
+    let id = this.props.id;
+    
+    console.log(typeof this.refs);
     let img;
     let that = this;
-    session.connect(this.props.token, function(err) {
-      if (err) {
-        this.handleError(err);
-      } else {
-        session.publish(publisher);
-        session.on("streamCreated", function(e) {
-          session.subscribe(e.stream);
-          setInterval(function() {
-            console.log("ewfpowf");
-            var imgData = publisher.getImgData();
-            img = document.createElement("img");
-            img.setAttribute("src", "data:image/png;base64," + imgData);
-            document.body.appendChild(img);
-            // console.log(img.src);
-            that.upload(img.src);
-          }, 5000);
-        });
-      }
-    });
+    if(this.props.id !== "cam1") {
+      let path = this.props.id === "cam1" ? null : this.refs[id];
+      const publisher = OT.initPublisher(path);
+      let session = OT.initSession(this.props.apiKey, this.props.sessionId);
+      session.connect(this.props.token, function(err) {
+        if (err) {
+          this.handleError(err);
+        } else {
+          let cam1 = document.getElementById('cam1');
+          console.log(cam1)
+       session.publish(publisher);
+       session.on("streamCreated", function(e) {
+         session.subscribe(e.stream, cam1, { insertMode: "replace", height: "95%", width: "95%" });
+         setInterval(function() {
+           var imgData = publisher.getImgData();
+           img = document.createElement("img");
+           img.setAttribute("src", "data:image/png;base64," + imgData);
+           that.upload(img.src);
+         }, 5000);
+       });
+     }
+   });
+    } 
+ 
   }
 
   upload(img) {
@@ -164,7 +171,7 @@ class Video extends Component {
   }
 
   render() {
-    return <div />;
+    return <section ref={this.props.id} />;
   }
 }
 
