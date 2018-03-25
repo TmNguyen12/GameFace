@@ -26,21 +26,43 @@ html, body {
 }
 
 .lobby-top {
-  height: 20%;
+  height: 25%;
 }
 
 .lobby-top-header {
   display: flex;
   flex-direction: row;
+  align-items: baseline;
   height: 25%;
+  margin-left: 2.5%;
+  position: relative;
+  top: 6%;
+}
+
+.lobby-top-round {
+  margin: 0;
+  font-size: 3em;
+}
+
+.lobby-top-scenario {
+  margin: 0;
+  /*position: relative;*/
+  padding-left: 20px;
+  /*top: 13%;*/
+  font-size: 2.5em;
+}
+
+.lobby-top-scenario-paragraph-div {
+  border: 5px solid #2a2b2f;
+  border-radius: 20px;
+  margin: 0 .5% 4% 2.5%;
+  height: 72%;
+  display: flex;
+  align-content: center;
 }
 
 .lobby-top-scenario-paragraph {
-  border: 5px solid black;
-  border-radius: 20px;
-  height: 65%;
-  /*width: 100%;*/
-  margin: 2% .5% 5% 2.5%;
+  margin: auto;
 }
 
 
@@ -54,8 +76,8 @@ html, body {
 
 .highlightedCam {
   width: 50%;
-  border: 5px solid black;
-  border-radius: 2.5%;
+  border: 5px solid #2a2b2f;
+  border-radius: 20px;
   margin: 2%;
   /*padding: 10px;*/
   box-sizing: border-box;
@@ -88,8 +110,8 @@ html, body {
   /*padding: 10px;*/
   width: 50%;
   height: 100%;
-  border: 5px solid black;
-  border-radius: 5%;
+  border: 5px solid #2a2b2f;
+  border-radius: 20px;
   box-sizing: border-box;
 }
 
@@ -97,13 +119,10 @@ html, body {
   margin-right: 4%;
 }
 
-.lobby-inviteLink {
-  height: 10%;
-}
 
 .lobby-playerCam-ready {
   margin-top: 10px;
-  color: orange;
+  color: #5ed564;
   font-size: 2.5em;
   text-align: center;
 }
@@ -111,22 +130,63 @@ html, body {
 
 
 .lobby-inviteLink {
+  height: 5%;
+  position: relative;
+  top: -1%;
+}
+.lobby-inviteLink {
   display: flex;
   flex-direction: row;
+  /*justify-content: center;*/
+  align-items: center;
 }
 .lobby-inviteLink-header {
-  margin: auto 1% auto 5%;
+  margin: 0;
+  margin-left: 2.5%;
+  font-size: 2em;
 }
 
 .lobby-inviteLink-linkAddress {
-  height: 25%;
-  margin: auto 0;
+  height: 60%;
+  width: 30%;
+  margin: 0;
+  margin-left: 1.5%;
+  padding: 1px;
+  box-sizing: border-box;
 }
 .lobby-inviteLink-button {
   border: none;
-  height: 30%;
-  padding: 10px 20px;
+  height: 60%;
+  width: 7%;
+  margin: 0;
+  padding: auto;
   background: purple;
   color: white;
+  font-size: 1em;
+  /*box-sizing: border-box;*/
+}
+
+
+
+
+
+.lobby-currentUser {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  margin-top: 5%;
+  height: 15%;
+}
+
+.lobby-currentUser-image {
+  width: 60px;
+  height: 60px;
+  background: blue;
   margin: auto 0;
+}
+.lobby-currentUser-name {
+  margin: auto 0;
+  margin-left: 20px;
+  font-size: 3em;
 }
