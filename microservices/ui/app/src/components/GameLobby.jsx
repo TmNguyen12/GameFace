@@ -92,26 +92,27 @@ class GameLobby extends Component {
 
           <div className="lobby-standings">
             <h2 className="lobby-standing-title">Standings</h2>
-            <h3 className="lobby-standing-1name">1 insert player name here</h3>
-            <h3 className="lobby-standing-1score">insert 1st place player score here</h3>
-            <h3 className="lobby-standing-2name">2 insert player name here</h3>
-            <h3 className="lobby-standing-1score">insert 2nd place player score here</h3>
-            <h3 className="lobby-standing-3name">3 insert player name here</h3>
-            <h3 className="lobby-standing-1score">insert 3rd place player score here</h3>
-            <h3 className="lobby-standing-4name">4 insert player name here</h3>
-            <h3 className="lobby-standing-1score">insert 4th place player score here</h3>
-            <h3 className="lobby-standing-5name">5 insert player name here</h3>
-            <h3 className="lobby-standing-1score">insert 5th place player score here</h3>
+            <h3 className="lobby-standing-name">1st insert player name here</h3>
+            <h3 className="lobby-standing-score">insert 1st place player score here</h3>
+            <h3 className="lobby-standing-name">2nd insert player name here</h3>
+            <h3 className="lobby-standing-score">insert 2nd place player score here</h3>
+            <h3 className="lobby-standing-name">3rd insert player name here</h3>
+            <h3 className="lobby-standing-score">insert 3rd place player score here</h3>
+            <h3 className="lobby-standing-name">4th insert player name here</h3>
+            <h3 className="lobby-standing-score">insert 4th place player score here</h3>
+            <h3 className="lobby-standing-name">5th insert player name here</h3>
+            <h3 className="lobby-standing-score">insert 5th place player score here</h3>
             </div>
 
           <div className="lobby-timer">
-            <h2 className="lobby-timer">Timer: insert timer here</h2>
+            <h2 className="lobby-timer-header">Timer</h2>
+            <h2 className="lobby-timer-time">countdown here</h2>
           </div>
 
           <div className="lobby-readyButton">
             <button
               onClick="ready()"
-              className="lobby-readyButton-Button">insert Ready or not Ready</button>
+              className="lobby-readyButton-Button">Ready</button>
           </div>
 
         </div>
