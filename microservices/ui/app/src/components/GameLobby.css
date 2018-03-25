@@ -1,0 +1,258 @@
+html, body {
+  height: 100%;
+}
+#root {
+  height: 100%;
+}
+.App {
+  height: 100%;
+  color: white;
+  background: #2a2b2f;
+}
+
+
+.lobby {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.lobby-left {
+  width: 70%;
+  /*background: blue;*/
+}
+
+.lobby-right {
+  width: 30%;
+}
+
+.lobby-top {
+  height: 25%;
+}
+
+.lobby-top-header {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  height: 25%;
+  margin-left: 2.5%;
+  /*padding-bottom: 2%;*/
+  height: 35%;
+
+}
+
+.lobby-top-round {
+  margin: 0;
+  font-size: 3em;
+  padding-bottom: 10px;
+}
+
+.lobby-top-scenario {
+  margin: 0;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  font-size: 2.5em;
+}
+
+.lobby-top-scenario-paragraph-div {
+  border: 5px solid #2a2b2f;
+  border-radius: 20px;
+  margin: 0 0% 4% 2%;
+  height: 65%;
+  display: flex;
+  align-content: center;
+  background: #36393f;
+}
+
+.lobby-top-scenario-paragraph {
+  margin: auto;
+}
+
+
+
+.lobby-playerCams {
+  display: flex;
+  flex-wrap: row;
+  height: 70%;
+  width: 100%;
+}
+
+.highlightedCam {
+  width: 50%;
+  border: 5px solid #36393f;
+  border-radius: 20px;
+  margin: 2%;
+  /*padding: 10px;*/
+  box-sizing: border-box;
+}
+
+.otherCams {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.otherCams-top {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: 4% 0 2% 0;
+  box-sizing: border-box;
+}
+
+.otherCams-bottom {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: 2% 0 4% 0;
+}
+
+.lobby-playerCam {
+  /*padding: 10px;*/
+  width: 50%;
+  height: 100%;
+  border: 5px solid #36393f;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.cam2, .cam4 {
+  margin-right: 4%;
+}
+
+
+.lobby-playerCam-ready {
+  margin-top: 10px;
+  color: #5ed564;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+
+
+.lobby-inviteLink {
+  height: 5%;
+  position: relative;
+  top: -1%;
+}
+.lobby-inviteLink {
+  display: flex;
+  flex-direction: row;
+  /*justify-content: center;*/
+  align-items: center;
+}
+.lobby-inviteLink-header {
+  margin: 0;
+  margin-left: 2%;
+  font-size: 2em;
+}
+
+.lobby-inviteLink-linkAddress {
+  height: 60%;
+  width: 30%;
+  margin: 0;
+  margin-left: 1%;
+  padding: 1px;
+  box-sizing: border-box;
+}
+.lobby-inviteLink-button {
+  border: none;
+  height: 60%;
+  width: 7%;
+  margin: 0;
+  padding: auto;
+  background: blue;
+  color: white;
+  font-size: 1em;
+  font-weight: 700;
+  border-radius: 2px;
+  border-bottom: 1px solid purple;
+  /*box-sizing: border-box;*/
+}
+.lobby-inviteLink-button:hover {
+  background: purple;
+  transition: 0.4s;
+  cursor: pointer;
+  border-bottom: 0;
+}
+
+
+
+
+.lobby-currentUser {
+  display: flex;
+  flex-direction: row;
+  /*align-content: flex-end;*/
+  /*align-items: flex-end;*/
+  justify-content: center;
+  margin-top: 10%;
+  height: 5%;
+}
+
+.lobby-currentUser-image {
+  width: 60px;
+  height: 60px;
+  background: blue;
+  margin: auto 0;
+}
+.lobby-currentUser-name {
+  margin: auto 0;
+  margin-left: 20px;
+  font-size: 3em;
+}
+
+.lobby-standings {
+  height: 55%;
+}
+.lobby-standing-title {
+  font-size: 3em;
+}
+.lobby-standing-name {
+  font-size: 2em;
+  margin: 0;
+}
+.lobby-standing-score {
+  font-size: 1.65em;
+  /*position: relative;*/
+  /*top: -5%;*/
+  margin: 0;
+  margin-bottom: 5%;
+}
+
+.lobby-timer {
+  height: 15%;
+}
+.lobby-timer-header {
+  font-size: 3em;
+  margin: 0;
+
+}
+.lobby-timer-time {
+  font-size: 4em;
+  margin: 0;
+}
+
+.lobby-readyButton {
+  height: 10%;
+}
+.lobby-readyButton-Button {
+  height: 100%;
+  width: 60%;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background: blue;
+  font-size: 3em;
+  font-weight: 700;
+  color: white;
+  border-radius: 5px;
+  border-bottom: 3px solid purple;
+}
+.lobby-readyButton-Button:hover {
+  background: purple;
+  transition: 0.4s;
+  cursor: pointer;
+  border-bottom: 0;
+}
