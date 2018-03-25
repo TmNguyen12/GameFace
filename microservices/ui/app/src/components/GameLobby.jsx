@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 // import Modal from "react-modal";
+import "./GameLobby.css";
 
 class GameLobby extends Component {
   constructor(props) {
@@ -29,34 +30,43 @@ class GameLobby extends Component {
 
   render(){
     return(
-      <div>
-        <div className="lobby-right">
+      <div className="lobby">
+        <div className="lobby-left">
           <div className="lobby-top">
-            <h2 className="lobby-top-round">Round 1</h2>
-            <h3 className="lobby-top-scenario">Scenario</h3>
+            <div className="lobby-top-header">
+              <h2 className="lobby-top-round">Round 1</h2>
+              <h3 className="lobby-top-scenario">Scenario</h3>
+            </div>
             <div className="lobby-top-scenario">insert random scenario here</div>
           </div>
 
           <div className="lobby-playerCams">
-            <div className="lobby-playerCam1">
-              <div className="lobby-playerCam1-ready">ready box here</div>
+            <div className="highlightedCam cam1">
+              <div className="lobby-playerCam-ready {ready}"></div>
               insert cam here
             </div>
-            <div className="lobby-playerCam2">
-              <div className="lobby-playerCam2-ready">ready box here</div>
-              insert cam here
-            </div>
-            <div className="lobby-playerCam3">
-              <div className="lobby-playerCam3-ready">ready box here</div>
-              insert cam here
-            </div>
-            <div className="lobby-playerCam4">
-              <div className="lobby-playerCam4-ready">ready box here</div>
-              insert cam here
-            </div>
-            <div className="lobby-playerCam5">
-              <div className="lobby-playerCam5-ready">ready box here</div>
-              insert cam here
+            <div className="otherCams">
+              <div className="otherCams-top">
+                <div className="lobby-playerCam cam2">
+                  <div className="lobby-playerCam-ready {ready}"></div>
+                  insert cam here
+                </div>
+                <div className="lobby-playerCam cam3">
+                  <div className="lobby-playerCam-ready {ready}"></div>
+                  insert cam here
+                </div>
+              </div>
+              <div className="otherCams-bottom">
+                <div className="lobby-playerCam cam4">
+                  <div className="lobby-playerCam-ready {ready}"></div>
+                  insert cam here
+                </div>
+                <div className="lobby-playerCam cam5">
+                  <div className="lobby-playerCam-ready {ready}"></div>
+                  insert cam here
+                </div>
+              </div>
+
             </div>
           </div>
 
@@ -72,7 +82,7 @@ class GameLobby extends Component {
         </div>
 
 
-        <div className="lobby-left">
+        <div className="lobby-right">
           <div className="lobby-standings">
             <h2 className="lobby-standing-title">Standings</h2>
             <h3 className="lobby-standing-1name">1 insert player name here</h3>
