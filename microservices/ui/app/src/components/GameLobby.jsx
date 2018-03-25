@@ -1,25 +1,25 @@
 import React, { Component } from 'react';
-import Modal from "react-modal";
+// import Modal from "react-modal";
 
 class GameLobby extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      modalIsOpen: false
-    };
-    this.openModal = this.openModal.bind(this);
+    // this.state = {
+    //   modalIsOpen: false
+    // };
+    // this.openModal = this.openModal.bind(this);
   }
 
   // modal opens when mouse click is held down
   // modal closes when mouse click is released
   // needs an event listener for mouse down and mouse up
   // if mouse down isn't on a button then run the modal
-  openModal(){
-    this.setState({modalIsOpen: true});
-  }
-  closeModal(){
-    this.setState({modalIsOpen: false});
-  }
+  // openModal(){
+  //   this.setState({modalIsOpen: true});
+  // }
+  // closeModal(){
+  //   this.setState({modalIsOpen: false});
+  // }
 
   render(){
     return(
