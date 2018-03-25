@@ -124,9 +124,9 @@ class Video extends Component {
 
   // Request parameters.
   var params = {
-    returnFaceId: "true",
+    returnFaceId: "false",
     returnFaceLandmarks: "false",
-    returnFaceAttributes: "emotion,blur,exposure,noise"
+    returnFaceAttributes: "emotion"
   };
 
   // Display the image.
