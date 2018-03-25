@@ -30,7 +30,13 @@ class GameLobby extends Component {
   }
 
   render(){
+<<<<<<< HEAD
     return <div className="lobby">
+=======
+
+    return(
+      <div className="lobby">
+>>>>>>> 60cbe43736deb6605efc7dbefdc3dcc0d66d8477
         <div className="lobby-left">
           <div className="lobby-top">
             <div className="lobby-top-header">
@@ -38,13 +44,21 @@ class GameLobby extends Component {
               <h2 className="lobby-top-scenario">Scenario</h2>
             </div>
             <div className="lobby-top-scenario-paragraph-div">
+<<<<<<< HEAD
               <h3 className="lobby-top-scenario-paragraph">
                 insert random scenario here
               </h3>
+=======
+              <h3 className="lobby-top-scenario-paragraph">insert random scenario here</h3>
+>>>>>>> 60cbe43736deb6605efc7dbefdc3dcc0d66d8477
             </div>
           </div>
 
           <div className="lobby-playerCams">
+<<<<<<< HEAD
+=======
+
+>>>>>>> 60cbe43736deb6605efc7dbefdc3dcc0d66d8477
             <div className="lobby-playerCam1">
               <div className="lobby-playerCam1-ready">ready box here</div>
               <Video apiKey="46086932" sessionId="2_MX40NjA4NjkzMn5-MTUyMTkyODcyMTc3OX5Qalc3NGhUUDFITzRYYnJyN1JwN0ZtL1d-fg" token="T1==cGFydG5lcl9pZD00NjA4NjkzMiZzaWc9NTFlODI0MTBkYjRmOWIwNmYzY2QzMzIyYjU3ZWMzYjk3ZTFkYTI5NDpzZXNzaW9uX2lkPTJfTVg0ME5qQTROamt6TW41LU1UVXlNVGt5T0RjeU1UYzNPWDVRYWxjM05HaFVVREZJVHpSWVluSnlOMUp3TjBadEwxZC1mZyZjcmVhdGVfdGltZT0xNTIxOTMzMjgxJm5vbmNlPTAuMzM4MTY3ODExNTgwMTE4NTUmcm9sZT1wdWJsaXNoZXImZXhwaXJlX3RpbWU9MTUyNDUyNTI4MCZpbml0aWFsX2xheW91dF9jbGFzc19saXN0PQ==" />
@@ -55,9 +69,25 @@ class GameLobby extends Component {
             </div>
             <div className="lobby-playerCam3">
               <div className="lobby-playerCam3-ready">ready box here</div>
+<<<<<<< HEAD
               <div className="highlightedCam cam1">
                 <div className="lobby-playerCam-ready {ready}">Ready</div>
                 insert cam here
+=======
+
+              insert cam here
+            </div>
+            <div className="otherCams">
+              <div className="otherCams-top">
+                <div className="lobby-playerCam cam2">
+                  <div className="lobby-playerCam-ready {ready}">Ready</div>
+                  insert cam here
+                </div>
+                <div className="lobby-playerCam cam3">
+                  <div className="lobby-playerCam-ready {ready}">Ready</div>
+                  insert cam here
+                </div>
+>>>>>>> 60cbe43736deb6605efc7dbefdc3dcc0d66d8477
               </div>
               <div className="otherCams">
                 <div className="otherCams-top">
@@ -91,9 +121,19 @@ class GameLobby extends Component {
               </div>
             </div>
 
+<<<<<<< HEAD
             <div className="lobby-inviteLink">
               <h3 className="lobby-inviteLink-header">Invite Link</h3>
               <input className="lobby-inviteLink-linkAddress" value="  insert link address here" type="text" />
+=======
+          <div className="lobby-inviteLink">
+            <h3 className="lobby-inviteLink-header">Invite Link</h3>
+
+            <input  className="lobby-inviteLink-linkAddress"
+                    value="  insert link address here"
+                    type="text" />
+
+>>>>>>> 60cbe43736deb6605efc7dbefdc3dcc0d66d8477
 
               <button className="lobby-inviteLink-button" onClick="copyToClipboard()">
                 Copy
@@ -101,6 +141,7 @@ class GameLobby extends Component {
             </div>
           </div>
 
+<<<<<<< HEAD
           <div className="lobby-right">
             <div className="lobby-currentUser">
               <div className="lobby-currentUser-image" />
@@ -140,17 +181,84 @@ class GameLobby extends Component {
                 insert 5th place player score here
               </h3>
             </div>
+=======
+        <div className="lobby-left">
+          <div className="lobby-standings">
+            <h2 className="lobby-standing-title">Standings</h2>
+            <h3 className="lobby-standing-1name">
+              1 insert player name here
+            </h3>
+            <h3 className="lobby-standing-1score">
+              insert 1st place player score here
+            </h3>
+            <h3 className="lobby-standing-2name">
+              2 insert player name here
+            </h3>
+            <h3 className="lobby-standing-1score">
+              insert 2nd place player score here
+            </h3>
+            <h3 className="lobby-standing-3name">
+              3 insert player name here
+            </h3>
+            <h3 className="lobby-standing-1score">
+              insert 3rd place player score here
+            </h3>
+            <h3 className="lobby-standing-4name">
+              4 insert player name here
+            </h3>
+            <h3 className="lobby-standing-1score">
+              insert 4th place player score here
+            </h3>
+            <h3 className="lobby-standing-5name">
+              5 insert player name here
+            </h3>
+            <h3 className="lobby-standing-1score">
+              insert 5th place player score here
+            </h3>
+          </div>
+
+
+        <div className="lobby-right">
+          <div className="lobby-currentUser">
+            <div className="lobby-currentUser-image"></div>
+            <h2 className="lobby-currentUser-name">username</h2>
+          </div>
+
+          <div className="lobby-standings">
+            <h2 className="lobby-standing-title">Standings</h2>
+            <h3 className="lobby-standing-name">1st insert player name here</h3>
+            <h3 className="lobby-standing-score">insert 1st place player score here</h3>
+            <h3 className="lobby-standing-name">2nd insert player name here</h3>
+            <h3 className="lobby-standing-score">insert 2nd place player score here</h3>
+            <h3 className="lobby-standing-name">3rd insert player name here</h3>
+            <h3 className="lobby-standing-score">insert 3rd place player score here</h3>
+            <h3 className="lobby-standing-name">4th insert player name here</h3>
+            <h3 className="lobby-standing-score">insert 4th place player score here</h3>
+            <h3 className="lobby-standing-name">5th insert player name here</h3>
+            <h3 className="lobby-standing-score">insert 5th place player score here</h3>
+            </div>
+
+>>>>>>> 60cbe43736deb6605efc7dbefdc3dcc0d66d8477
 
             <div className="lobby-timer">
               <h2 className="lobby-timer-header">Timer</h2>
               <h2 className="lobby-timer-time">countdown here</h2>
             </div>
 
+<<<<<<< HEAD
             <div className="lobby-readyButton">
               <button onClick={"ready()"} className="lobby-readyButton-Button">
                 Ready
               </button>
             </div>
+=======
+          <div className="lobby-readyButton">
+
+            <button onClick="ready()" className="lobby-readyButton-Button">
+              insert Ready or not Ready
+            </button>
+
+>>>>>>> 60cbe43736deb6605efc7dbefdc3dcc0d66d8477
           </div>
         </div>
       </div>;
