@@ -33,10 +33,6 @@ class GameLobby extends Component {
 
     return(
       <div className="lobby">
-<<<<<<< HEAD
-=======
-
->>>>>>> master
         <div className="lobby-left">
 
           <div className="lobby-top">
