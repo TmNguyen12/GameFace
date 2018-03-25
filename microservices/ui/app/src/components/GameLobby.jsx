@@ -86,11 +86,11 @@ class GameLobby extends Component {
           </div>
         </div>
 
-        <div className="lobby-right">
-          <div className="lobby-currentUser">
-            <div className="lobby-currentUser-image" />
-            <h2 className="lobby-currentUser-name">username</h2>
-          </div>
+    //     <div className="lobby-right">
+    //       <div className="lobby-currentUser">
+    //         <div className="lobby-currentUser-image" />
+    //         <h2 className="lobby-currentUser-name">username</h2>
+    //       </div>
 
           <div className="lobby-standings">
             <h2 className="lobby-standing-title">Standings</h2>
@@ -126,10 +126,10 @@ class GameLobby extends Component {
             </h3>
           </div>
 
-          <div className="lobby-timer">
-            <h2 className="lobby-timer-header">Timer</h2>
-            <h2 className="lobby-timer-time">countdown here</h2>
-          </div>
+    //       <div className="lobby-timer">
+    //         <h2 className="lobby-timer-header">Timer</h2>
+    //         <h2 className="lobby-timer-time">countdown here</h2>
+    //       </div>
 
           <div className="lobby-readyButton">
             <button onClick={"ready()"} className="lobby-readyButton-Button">
