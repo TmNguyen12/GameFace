@@ -5,6 +5,13 @@ import "./GameLobby.css";
 class GameLobby extends Component {
   constructor(props) {
     super(props);
+    this.players = [
+      { id: 1, user_name: "joeyD", display_name: "joey" },
+      { id: 2, user_name: "christineS", display_name: "christine" },
+      { id: 3, user_name: "annaO", display_name: "anna" },
+      { id: 4, user_name: "edanL", display_name: "edan" },
+      { id: 5, user_name: "truongN", display_name: "truong" }
+    ];
     // this.state = {
     //   modalIsOpen: false
     // };
@@ -43,7 +50,9 @@ class GameLobby extends Component {
           </div>
           <div className="lobby-playerCams">
             <div className="highlightedCam cam1">
-              <div id="cam1" className="lobby-playerCam-ready {ready}">Ready</div>
+              <div id="cam1" className="lobby-playerCam-ready {ready}">
+                Ready
+              </div>
               <Video
                 id="cam1"
                 className="lobby-playerCam-video1"
@@ -55,7 +64,9 @@ class GameLobby extends Component {
             <div className="otherCams">
               <div className="otherCams-top">
                 <div className="lobby-playerCam cam2">
-                  <div className="lobby-playerCam-ready {ready}">Ready</div>
+                  <div id="cam2" className="lobby-playerCam-ready {ready}">
+                    Ready
+                  </div>
                   <Video
                     id="cam2"
                     className="lobby-playerCam-video2"
@@ -65,7 +76,9 @@ class GameLobby extends Component {
                   />
                 </div>
                 <div className="lobby-playerCam cam3">
-                  <div className="lobby-playerCam-ready {ready}">Ready</div>
+                  <div id="cam3" className="lobby-playerCam-ready {ready}">
+                    Ready
+                  </div>
                   <Video
                     id="cam3"
                     className="lobby-playerCam-video3"
@@ -77,7 +90,9 @@ class GameLobby extends Component {
               </div>
               <div className="otherCams-bottom">
                 <div className="lobby-playerCam cam4">
-                  <div className="lobby-playerCam-ready {ready}">Ready</div>
+                  <div id="cam4" className="lobby-playerCam-ready {ready}">
+                    Ready
+                  </div>
                   <Video
                     id="cam4"
                     className="lobby-playerCam-video4"
@@ -87,7 +102,9 @@ class GameLobby extends Component {
                   />
                 </div>
                 <div className="lobby-playerCam cam5">
-                  <div className="lobby-playerCam-ready {ready}">Ready</div>
+                  <div id="cam5" className="lobby-playerCam-ready {ready}">
+                    Ready
+                  </div>
                   <Video
                     id="cam5"
                     className="lobby-playerCam-video5"

@@ -48,30 +48,37 @@ class Video extends Component {
   }
 
   initializeSession() {
-    var publisherOptions = { insertMode: "replace", width: "100%", height: "100%" };
+    var publisherOptions = { insertMode: "replace", height: "95%", width: "95%" };
     let id = this.props.id;
     
     console.log(typeof this.refs);
     let img;
     let that = this;
-    if(this.props.id !== "cam1") {
-      let path = this.props.id === "cam1" ? null : this.refs[id];
-      const publisher = OT.initPublisher(path);
+    if(this.props.id === "cam1") {
+      // let path = this.props.id === "cam1" ? null : this.refs[id];
+      const publisher = OT.initPublisher(this.refs[id], publisherOptions);
       let session = OT.initSession(this.props.apiKey, this.props.sessionId);
       session.connect(this.props.token, function(err) {
         if (err) {
           this.handleError(err);
         } else {
-          let cam1 = document.getElementById('cam1');
-          console.log(cam1)
+          let cam = document.getElementById('cam2');
+          let i = 2;
+          
        session.publish(publisher);
        session.on("streamCreated", function(e) {
-         session.subscribe(e.stream, cam1, { insertMode: "replace", height: "95%", width: "95%" });
+         session.subscribe(e.stream, cam);
+         if(cam !== document.getElementById('cam5')) {
+           cam = document.getElementById(`cam${i++}`)
+          } else {
+           cam = document.getElementById('cam2');
+         };
          setInterval(function() {
            var imgData = publisher.getImgData();
            img = document.createElement("img");
            img.setAttribute("src", "data:image/png;base64," + imgData);
            that.upload(img.src);
+           
          }, 5000);
        });
      }
