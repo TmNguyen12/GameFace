@@ -16,7 +16,7 @@
 defaultProviders:
   username:
     enabled: "true"
-    defaultRoles: []
+    defaultRoles: ["user", "anonymous"]
   email:
     enabled: "false"
     defaultRoles: []
@@ -27,17 +27,17 @@ defaultProviders:
     enabled: "false"
     defaultRoles: []
   google:
-    enabled: "false"
-    defaultRoles: []
+    enabled: "true"
+    defaultRoles: ["user"]
   facebook:
-    enabled: "false"
-    defaultRoles: []
+    enabled: "true"
+    defaultRoles: ["user"]
   github:
-    enabled: "false"
-    defaultRoles: []
+    enabled: "true"
+    defaultRoles: ["user"]
   linkedin:
-    enabled: "false"
-    defaultRoles: []
+    enabled: "true"
+    defaultRoles: ["user"]
 
 # Session related configuration
 session:
