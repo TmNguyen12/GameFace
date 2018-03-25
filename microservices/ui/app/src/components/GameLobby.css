@@ -24,6 +24,8 @@ html, body {
 
 .lobby-right {
   width: 30%;
+  display: flex;
+  flex-direction: column;
 }
 
 .lobby-top {

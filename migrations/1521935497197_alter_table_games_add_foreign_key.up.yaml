@@ -1,0 +1,3 @@
+- args:
+    sql: ALTER TABLE "games" ADD FOREIGN KEY ("player4") REFERENCES "users" ("id")
+  type: run_sql
