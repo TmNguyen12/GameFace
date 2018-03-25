@@ -49,14 +49,18 @@ class GameLobby extends Component {
           <div className="lobby-playerCams">
             <div className="highlightedCam cam1">
               <div className="lobby-playerCam-ready {ready}">Ready</div>
-              <Video apiKey="46086932" sessionId="2_MX40NjA4NjkzMn5-MTUyMTkyODcyMTc3OX5Qalc3NGhUUDFITzRYYnJyN1JwN0ZtL1d-fg" token="T1==cGFydG5lcl9pZD00NjA4NjkzMiZzaWc9NTFlODI0MTBkYjRmOWIwNmYzY2QzMzIyYjU3ZWMzYjk3ZTFkYTI5NDpzZXNzaW9uX2lkPTJfTVg0ME5qQTROamt6TW41LU1UVXlNVGt5T0RjeU1UYzNPWDVRYWxjM05HaFVVREZJVHpSWVluSnlOMUp3TjBadEwxZC1mZyZjcmVhdGVfdGltZT0xNTIxOTMzMjgxJm5vbmNlPTAuMzM4MTY3ODExNTgwMTE4NTUmcm9sZT1wdWJsaXNoZXImZXhwaXJlX3RpbWU9MTUyNDUyNTI4MCZpbml0aWFsX2xheW91dF9jbGFzc19saXN0PQ==" />
+              <Video  className="lobby-playerCam-video1"
+                      apiKey="46086932"
+                      sessionId="2_MX40NjA4NjkzMn5-MTUyMTkyODcyMTc3OX5Qalc3NGhUUDFITzRYYnJyN1JwN0ZtL1d-fg"
+                      token="T1==cGFydG5lcl9pZD00NjA4NjkzMiZzaWc9NTFlODI0MTBkYjRmOWIwNmYzY2QzMzIyYjU3ZWMzYjk3ZTFkYTI5NDpzZXNzaW9uX2lkPTJfTVg0ME5qQTROamt6TW41LU1UVXlNVGt5T0RjeU1UYzNPWDVRYWxjM05HaFVVREZJVHpSWVluSnlOMUp3TjBadEwxZC1mZyZjcmVhdGVfdGltZT0xNTIxOTMzMjgxJm5vbmNlPTAuMzM4MTY3ODExNTgwMTE4NTUmcm9sZT1wdWJsaXNoZXImZXhwaXJlX3RpbWU9MTUyNDUyNTI4MCZpbml0aWFsX2xheW91dF9jbGFzc19saXN0PQ==" />
             </div>
 
             <div className="otherCams">
               <div className="otherCams-top">
                 <div className="lobby-playerCam cam2">
                   <div className="lobby-playerCam-ready {ready}">Ready</div>
-                  <Video  apiKey="46086932"
+                  <Video  className="lobby-playerCam-video2"
+                          apiKey="46086932"
                           sessionId="2_MX40NjA4NjkzMn5-MTUyMTkyODcyMTc3OX5Qalc3NGhUUDFITzRYYnJyN1JwN0ZtL1d-fg"
                           token="T1==cGFydG5lcl9pZD00NjA4NjkzMiZzaWc9NTFlODI0MTBkYjRmOWIwNmYzY2QzMzIyYjU3ZWMzYjk3ZTFkYTI5NDpzZXNzaW9uX2lkPTJfTVg0ME5qQTROamt6TW41LU1UVXlNVGt5T0RjeU1UYzNPWDVRYWxjM05HaFVVREZJVHpSWVluSnlOMUp3TjBadEwxZC1mZyZjcmVhdGVfdGltZT0xNTIxOTMzMjgxJm5vbmNlPTAuMzM4MTY3ODExNTgwMTE4NTUmcm9sZT1wdWJsaXNoZXImZXhwaXJlX3RpbWU9MTUyNDUyNTI4MCZpbml0aWFsX2xheW91dF9jbGFzc19saXN0PQ==" />
                 </div>
