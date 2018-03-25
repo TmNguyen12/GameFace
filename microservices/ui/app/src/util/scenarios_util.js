@@ -19,7 +19,7 @@ var body = {
 
 requestOptions.body = JSON.stringify(body);
 
-export const fetchScenario = id => {
+export const fetchScenarios = id => {
   fetch(url, requestOptions)
     .then(function(response) {
       return response.json();
