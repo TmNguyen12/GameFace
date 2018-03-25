@@ -123,11 +123,13 @@ class GameLobby extends Component {
 
           <div className="lobby-readyButton">
             <button
-              onClick="ready()"
+              onClick={"ready()"}
               className="lobby-readyButton-Button">Ready</button>
           </div>
         </div>
-      </div>;
+      </div>
+      </div>
+      );
   }
 
 }
