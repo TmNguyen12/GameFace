@@ -17,7 +17,6 @@ import { receiveUser } from './actions/user_actions';
 import { fetchScenarios } from "./util/scenarios_util";
 import Root from './root.jsx';
 
-import { getCurrentPlayers } from "./reducer/selectors";
 
 document.addEventListener('DOMContentLoaded', () => {
     const store = configureStore(); 
@@ -31,6 +30,5 @@ document.addEventListener('DOMContentLoaded', () => {
     window.fetchGame = fetchGame;
     window.fetchScenarios = fetchScenarios;
     window.receiveUser = receiveUser;
-    window.getCurrentPlayers = getCurrentPlayers;
     ReactDOM.render(<Root store={store}/>, document.getElementById("root"));
 });

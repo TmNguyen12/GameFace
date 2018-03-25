@@ -5,7 +5,7 @@ import gameReducer from './game_reducer';
 
 const rootReducer = combineReducers({
     scenarios: scenarioReducer,
-    user: userReducer,
+    users: userReducer,
     game: gameReducer
 }); 
 
