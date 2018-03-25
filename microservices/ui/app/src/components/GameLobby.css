@@ -45,15 +45,23 @@ html, body {
 
 .lobby-top-round {
   margin: 0;
+  padding-bottom: 0px;
+  position: relative;
+  top: 7%;
   font-size: 3em;
-  padding-bottom: 10px;
+  font-family: 'Permanent Marker', cursive;
+  font-weight: 400;
 }
 
 .lobby-top-scenario {
   margin: 0;
   padding-left: 20px;
-  padding-bottom: 10px;
+  padding-bottom: 0px;
+  position: relative;
+  top: 7%;
   font-size: 2.5em;
+  font-family: 'Permanent Marker', cursive;
+  font-weight: 400;
 }
 
 .lobby-top-scenario-paragraph-div {
@@ -206,17 +214,22 @@ html, body {
 }
 
 .lobby-standings {
-  height: 55%;
+  height: 50%;
 }
 .lobby-standing-title {
   font-size: 3em;
+  font-family: 'Fugaz One', cursive;
+
 }
 .lobby-standing-name {
-  font-size: 2em;
+  font-size: 1.5em;
   margin: 0;
+  font-family: 'Bungee', cursive;
 }
 .lobby-standing-score {
-  font-size: 1.65em;
+  font-size: 2em;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-weight: 900;
   /*position: relative;*/
   /*top: -5%;*/
   margin: 0;
@@ -232,7 +245,7 @@ html, body {
 
 }
 .lobby-timer-time {
-  font-size: 4em;
+  font-size: 3em;
   margin: 0;
 }
 
