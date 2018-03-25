@@ -25,6 +25,7 @@ export const fetchUser = userID => {
 
   fetch(url, requestOptions)
     .then(function(response) {
+      // debugger 
       return response.json();
     })
     .then(function(result) {
