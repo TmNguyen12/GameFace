@@ -43,7 +43,7 @@ html, body {
 
 .highlightedCam {
   width: 50%;
-  background: blue;
+  border: 5px solid black;
   margin: 2%;
   /*padding: 10px;*/
   box-sizing: border-box;
@@ -76,7 +76,7 @@ html, body {
   /*padding: 10px;*/
   width: 50%;
   height: 100%;
-  background: blue;
+  border: 5px solid black;
   box-sizing: border-box;
 }
 
@@ -92,9 +92,23 @@ html, body {
   width: 50px;
   height: 50px;
   background: green;
-  border: 2px solid gray;
+  border: 2px solid green;
   border-radius: 50%;
   position: relative;
-  left: -2%;
-  top: -2%;
+  left: -15px;
+  top: -10px;
+}
+
+.lobby-inviteLink {
+  display: flex;
+  flex-direction: row;
+}
+
+.lobby-inviteLink-linkAddress {
+  margin-left: 5%;
+  height: 25%;
+}
+.lobby-inviteLink-button {
+  height: 30%;
+
 }
