@@ -1,0 +1,6 @@
+- args:
+    name: scenarioID
+    table: rounds
+    using:
+      foreign_key_constraint_on: scenario_id
+  type: create_object_relationship

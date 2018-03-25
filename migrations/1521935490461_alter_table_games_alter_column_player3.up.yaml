@@ -1,0 +1,9 @@
+- args:
+    sql: ALTER TABLE "games" ALTER COLUMN "player3" TYPE integer;
+  type: run_sql
+- args:
+    sql: ALTER TABLE "games" ALTER COLUMN "player3" DROP DEFAULT;
+  type: run_sql
+- args:
+    sql: ALTER TABLE "games" ALTER COLUMN "player3" SET NOT NULL;
+  type: run_sql
