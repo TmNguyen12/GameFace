@@ -1,0 +1,9 @@
+- args:
+    sql: CREATE TABLE "rounds"("id" serial NOT NULL, "count" integer NOT NULL, "game_id"
+      integer NOT NULL, "user_id" integer NOT NULL, "core_emotion" text NOT NULL,
+      "scenario_id" integer NOT NULL, "score" integer NOT NULL, PRIMARY KEY ("id")
+      )
+  type: run_sql
+- args:
+    name: rounds
+  type: add_existing_table_or_view
