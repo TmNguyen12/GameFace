@@ -32,7 +32,18 @@ html, body {
 .lobby-top-header {
   display: flex;
   flex-direction: row;
+  height: 25%;
 }
+
+.lobby-top-scenario-paragraph {
+  border: 5px solid black;
+  border-radius: 20px;
+  height: 65%;
+  /*width: 100%;*/
+  margin: 2% .5% 5% 2.5%;
+}
+
+
 
 .lobby-playerCams {
   display: flex;
@@ -44,6 +55,7 @@ html, body {
 .highlightedCam {
   width: 50%;
   border: 5px solid black;
+  border-radius: 2.5%;
   margin: 2%;
   /*padding: 10px;*/
   box-sizing: border-box;
@@ -77,6 +89,7 @@ html, body {
   width: 50%;
   height: 100%;
   border: 5px solid black;
+  border-radius: 5%;
   box-sizing: border-box;
 }
 
@@ -89,26 +102,31 @@ html, body {
 }
 
 .lobby-playerCam-ready {
-  width: 50px;
-  height: 50px;
-  background: green;
-  border: 2px solid green;
-  border-radius: 50%;
-  position: relative;
-  left: -15px;
-  top: -10px;
+  margin-top: 10px;
+  color: orange;
+  font-size: 2.5em;
+  text-align: center;
 }
+
+
 
 .lobby-inviteLink {
   display: flex;
   flex-direction: row;
 }
+.lobby-inviteLink-header {
+  margin: auto 1% auto 5%;
+}
 
 .lobby-inviteLink-linkAddress {
-  margin-left: 5%;
   height: 25%;
+  margin: auto 0;
 }
 .lobby-inviteLink-button {
+  border: none;
   height: 30%;
-
+  padding: 10px 20px;
+  background: purple;
+  color: white;
+  margin: auto 0;
 }

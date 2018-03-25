@@ -37,32 +37,32 @@ class GameLobby extends Component {
               <h2 className="lobby-top-round">Round 1</h2>
               <h3 className="lobby-top-scenario">Scenario</h3>
             </div>
-            <div className="lobby-top-scenario">insert random scenario here</div>
+            <div className="lobby-top-scenario-paragraph">insert random scenario here</div>
           </div>
 
           <div className="lobby-playerCams">
             <div className="highlightedCam cam1">
-              <div className="lobby-playerCam-ready {ready}"></div>
+              <div className="lobby-playerCam-ready {ready}">Ready</div>
               insert cam here
             </div>
             <div className="otherCams">
               <div className="otherCams-top">
                 <div className="lobby-playerCam cam2">
-                  <div className="lobby-playerCam-ready {ready}"></div>
+                  <div className="lobby-playerCam-ready {ready}">Ready</div>
                   insert cam here
                 </div>
                 <div className="lobby-playerCam cam3">
-                  <div className="lobby-playerCam-ready {ready}"></div>
+                  <div className="lobby-playerCam-ready {ready}">Ready</div>
                   insert cam here
                 </div>
               </div>
               <div className="otherCams-bottom">
                 <div className="lobby-playerCam cam4">
-                  <div className="lobby-playerCam-ready {ready}"></div>
+                  <div className="lobby-playerCam-ready {ready}">Ready</div>
                   insert cam here
                 </div>
                 <div className="lobby-playerCam cam5">
-                  <div className="lobby-playerCam-ready {ready}"></div>
+                  <div className="lobby-playerCam-ready {ready}">Ready</div>
                   insert cam here
                 </div>
               </div>
@@ -73,7 +73,7 @@ class GameLobby extends Component {
           <div className="lobby-inviteLink">
             <h3 className="lobby-inviteLink-header">Invite Link</h3>
             <input  className="lobby-inviteLink-linkAddress"
-                    value="insert link address here"
+                    value="  insert link address here"
                     type="text" />
 
             <button className="lobby-inviteLink-button"
@@ -83,6 +83,13 @@ class GameLobby extends Component {
 
 
         <div className="lobby-right">
+          <div className="lobby-currentUser">
+            <div className="lobby-currentUser-image">
+
+            </div>
+            <h2 className="lobby-currentUser-name">username</h2>
+          </div>
+
           <div className="lobby-standings">
             <h2 className="lobby-standing-title">Standings</h2>
             <h3 className="lobby-standing-1name">1 insert player name here</h3>
