@@ -1,0 +1,14 @@
+- args:
+    permission:
+      columns:
+      - player2
+      - player4
+      - game_master
+      - player5
+      - completed
+      - player3
+      - id
+      filter: {}
+    role: anonymous
+    table: games
+  type: create_update_permission
