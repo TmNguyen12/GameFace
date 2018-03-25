@@ -44,7 +44,8 @@ class GameLobby extends Component {
             </div>
             <div className="lobby-top-scenario-paragraph-div">
               <h3 className="lobby-top-scenario-paragraph">
-                insert random scenario here
+                you're participating in a hackathon and nothing is working ...
+                and then you realize that you were reaading the wrong docs the entire time.
               </h3>
             </div>
           </div>
