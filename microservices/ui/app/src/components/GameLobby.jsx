@@ -117,8 +117,11 @@ class GameLobby extends Component {
 
         <div className="lobby-right">
           <div className="lobby-currentUser">
-            <div className="lobby-currentUser-image" />
-            <h2 className="lobby-currentUser-name">username</h2>
+
+            <img  className="lobby-currentUser-image"
+                  alt="user-img"
+                  src="https://openclipart.org/image/2400px/svg_to_png/247319/abstract-user-flat-3.png"/>
+                <h2 className="lobby-currentUser-name">user1</h2>
           </div>
 
           <div className="lobby-standings">
@@ -130,19 +133,31 @@ class GameLobby extends Component {
             <h3 className="lobby-standing-score">
               479
             </h3>
-            <h3 className="lobby-standing-name">2nd insert player name</h3>
+            <div className="lobby-standing-place-name">
+              <h3 className="lobby-standing-place">2nd</h3>
+              <h3 className="lobby-standing-name">user2</h3>
+            </div>
             <h3 className="lobby-standing-score">
               250
             </h3>
-            <h3 className="lobby-standing-name">3rd insert player name</h3>
+            <div className="lobby-standing-place-name">
+              <h3 className="lobby-standing-place">3rd</h3>
+              <h3 className="lobby-standing-name">user3</h3>
+            </div>
             <h3 className="lobby-standing-score">
               250
             </h3>
-            <h3 className="lobby-standing-name">4th insert player name</h3>
+            <div className="lobby-standing-place-name">
+              <h3 className="lobby-standing-place">4th</h3>
+              <h3 className="lobby-standing-name">user4</h3>
+            </div>
             <h3 className="lobby-standing-score">
               250
             </h3>
-            <h3 className="lobby-standing-name">5th insert player name</h3>
+            <div className="lobby-standing-place-name">
+              <h3 className="lobby-standing-place">5th</h3>
+              <h3 className="lobby-standing-name">user5</h3>
+            </div>
             <h3 className="lobby-standing-score">
               25
             </h3>
@@ -150,7 +165,7 @@ class GameLobby extends Component {
 
           <div className="lobby-timer">
             <h2 className="lobby-timer-header">Timer</h2>
-            <h2 className="lobby-timer-time">countdown</h2>
+            <h2 className="lobby-timer-time">20</h2>
           </div>
 
           <div className="lobby-readyButton">

@@ -78,6 +78,9 @@ html, body {
 
 .lobby-top-scenario-paragraph {
   margin: auto;
+  font-family: 'Heebo', sans-serif;
+  font-size: 2em;
+
 }
 
 
@@ -91,6 +94,7 @@ html, body {
 
 .highlightedCam {
   width: 50%;
+  background: #36393f;
   border: 5px solid #36393f;
   border-radius: 20px;
   margin: 2%;
@@ -125,6 +129,7 @@ html, body {
   /*padding: 10px;*/
   width: 50%;
   height: 100%;
+  background: #36393f;
   border: 5px solid #36393f;
   border-radius: 20px;
   box-sizing: border-box;
@@ -139,6 +144,8 @@ html, body {
   margin-top: 10px;
   color: #5ed564;
   font-size: 2.5em;
+  font-family: 'Heebo', sans-serif;
+  font-weight: 900;
   text-align: center;
 }
 
@@ -159,6 +166,7 @@ html, body {
   margin: 0;
   margin-left: 2%;
   font-size: 2em;
+  font-family: 'Heebo', sans-serif;
 }
 
 .lobby-inviteLink-linkAddress {
@@ -175,16 +183,17 @@ html, body {
   width: 7%;
   margin: 0;
   padding: auto;
-  background: blue;
+  background: #256b28;
   color: white;
   font-size: 1em;
   font-weight: 700;
+  font-family: 'Heebo', sans-serif;
   border-radius: 2px;
-  border-bottom: 1px solid purple;
+  border-bottom: 1px solid #073e09;
   /*box-sizing: border-box;*/
 }
 .lobby-inviteLink-button:hover {
-  background: purple;
+  background: #073e09;
   transition: 0.4s;
   cursor: pointer;
   border-bottom: 0;
@@ -199,17 +208,19 @@ html, body {
   justify-content: center;
   margin-top: 10%;
   height: 5%;
+  position: relative;
+  top: 3%;
 }
 
 .lobby-currentUser-image {
   width: 60px;
   height: 60px;
-  background: blue;
+  /*background: blue;*/
   margin: auto 0;
 }
 .lobby-currentUser-name {
   margin: auto 0;
-  margin-left: 20px;
+  margin-left: 10px;
   font-size: 3em;
 }
 
@@ -218,8 +229,9 @@ html, body {
 }
 .lobby-standing-title {
   color: white;
+  font-weight: 400;
   font-size: 3em;
-  font-family: 'Carter One', cursive;
+  font-family: 'Luckiest Guy', cursive;
   position: relative;
   top: 5%;
 }
@@ -228,29 +240,25 @@ html, body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  margin-bottom: 5px;
 }
 .lobby-standing-place {
   margin: 0;
   margin-right: 10px;
-  /*color: black;*/
-  font-size: 2em;
+  font-size: 2.5em;
   font-family: 'Bungee', cursive;
 }
 .lobby-standing-name {
-  /*color: black;*/
-  font-size: 1.5em;
+  font-size: 2em;
   margin: 0;
   font-family: 'Bungee', cursive;
 }
 .lobby-standing-score {
-  /*color: black;*/
   font-size: 3em;
-  font-family: 'Carter One', cursive;
-  /*font-weight: 900;*/
-  position: relative;
-  top: -1%;
+  font-family: 'Luckiest Guy', cursive;
+  font-weight: 400;
   margin: 0;
-  margin-bottom: 5%;
+  margin-bottom: 2%;
 }
 
 .lobby-timer {
@@ -258,14 +266,17 @@ html, body {
 }
 .lobby-timer-header {
   font-size: 3em;
-  color: black;
-  font-family: 'Bungee Shade', cursive;
+  font-weight: 400;
+  color: white;
+  font-family: 'Luckiest Guy', cursive;
   margin: 0;
 
 }
 .lobby-timer-time {
-  font-size: 3em;
+  font-size: 4em;
+  font-family: 'Luckiest Guy', cursive;
   margin: 0;
+  margin-top: 10px;
 }
 
 .lobby-readyButton {
@@ -277,15 +288,16 @@ html, body {
   padding: 0;
   margin: 0;
   border: 0;
-  background: blue;
+  background: #256b28;
   font-size: 3em;
   font-weight: 700;
+  font-family: 'Heebo', sans-serif;
   color: white;
   border-radius: 5px;
-  border-bottom: 3px solid purple;
+  border-bottom: 5px solid #073e09;
 }
 .lobby-readyButton-Button:hover {
-  background: purple;
+  background: #073e09;
   transition: 0.4s;
   cursor: pointer;
   border-bottom: 0;
