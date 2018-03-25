@@ -179,7 +179,7 @@ html, body {
 }
 .lobby-inviteLink-button {
   border: none;
-  height: 60%;
+  height: 61%;
   width: 7%;
   margin: 0;
   padding: auto;
@@ -189,8 +189,7 @@ html, body {
   font-weight: 700;
   font-family: 'Heebo', sans-serif;
   border-radius: 2px;
-  border-bottom: 1px solid #073e09;
-  /*box-sizing: border-box;*/
+
 }
 .lobby-inviteLink-button:hover {
   background: #073e09;
